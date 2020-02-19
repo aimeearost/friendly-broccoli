@@ -1,0 +1,176 @@
+body{
+  position: relative;
+  margin: 0;
+  padding-bottom: 6rem;
+  min-height: 100%;
+}
+.card {
+      max-width: 214px;
+  min-width: 200px;
+  margin-left: 5%;
+  margin-right: 5%;
+
+}
+
+
+.container{
+  margin-top: 15%;
+}
+
+
+
+.card-deck  {
+    margin-bottom: 5%;
+}
+
+.card-img-top {
+  height: 200px;
+  width: 214px;
+}
+
+div.jumbotron.jumbotron-fluid {
+  margin-bottom: 100px;
+}
+
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #dfdfdf;
+  text-align: center;
+}
+
+
+
+header {
+  position: relative;
+  background-color: black;
+  height: 100vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+@media (pointer: coarse) and (hover: none) {
+  header {
+    background: url('https://source.unsplash.com/5GwLlb-_UYk/1600x900') black no-repeat center center scroll;
+  }
+  header video {
+    display: none;
+  }
+}
+
+.jumbotron {
+  height: 100vh;
+  padding-top: 25%;
+  margin-bottom: 100px;
+  background-color: #dfdfdf !important ;
+}
+
+.lead {
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  background-color: #dfdfdf;
+  top: 0;
+  font-size: 125%;
+  min-height: 75px;
+}
+
+
+.nav-item .nav-link {
+  color: #f2f7f4;
+}
+
+.navbar .nav-link:hover {
+  color: black;
+}
+
+#projects {
+  padding-top: 7%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-left: 0%;
+  margin-right: 0%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #dfdfdf;
+}
+#projects-h1 {
+  padding-bottom: 20px;
+  text-transform: uppercase;
+  
+}
+
+div .row {
+  align-content: center;
+  width: 95vw;
+  margin-top: 100px;
+  margin-bottom: 5%;
+}
+
+
+.typewriter h2 {
+  color: white;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .05em solid black; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation:
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: black; }
+}
+
